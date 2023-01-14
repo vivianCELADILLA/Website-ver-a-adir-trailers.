@@ -1,0 +1,86 @@
+
+@mixin responsive($size) {
+  $screen_sizes: (
+      phone: "600px",
+      tablet: " 800px",
+      small: " 900px",
+      medium: " 1250px",
+      large: " 1600px",
+    );
+  $query_value: map-get($screen_sizes, $size);
+  
+  @media screen and (max-width: $query_value) {
+  
+      @content;
+    }
+   
+
+}
+
+
+
+
+.trailer{
+  width: 90%;
+  margin: 30px auto;
+  color: hsl(0, 0%, 100%);
+  @include responsive(tablet){
+      background-color: red !important;
+  }
+
+  &__info{
+    display: flex;
+    gap: 20px;
+    &__portada{
+      overflow: hidden;
+      height: 350px;
+      width: 300px;
+      img{
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+
+
+
+      }
+    }
+    &__description{
+      width: 70%;
+      .titulo{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: hsl(57, 100%, 51%);
+      }
+      .info{
+        color:  hsl(0, 0%, 100%);
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        strong{
+          font-weight: bold;
+        }
+      }
+
+      p{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        width: 70%;
+        text-align: justify;
+        
+        
+      }
+    }
+  }
+  &__video{
+    margin: 50px auto;
+    height: 500px;
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+
+

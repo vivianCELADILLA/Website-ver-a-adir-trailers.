@@ -1,0 +1,159 @@
+$btn-pry-color: hsla(57, 95%, 24%, 0.18);
+$btn-pry-color-hover: hsla(57, 100%, 51%, 0.447);
+$btn-scd-color: #e91e63;
+$btn-scd-color-hover: #c2185b;
+$btn-pry-color-: hsla(221, 91%, 38%, 0.447);
+
+.admin {
+	width: 100%;
+	height: 100%;
+	background-color: #131313;
+	display: flex;
+	color: #ffffff;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	
+	margin: 0;
+	background: url("../Admin/tv-series-bg.jpg");
+
+	&__header {
+		display: flex;
+		width: 100%;
+		text-align: center;
+		
+		color: rgb(0, 0, 0);
+
+		.icon{
+			width: 30px;
+			height: 30px;
+			margin-left: 10px;
+		}
+
+		h3 {
+			margin: 5px 20px;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		width: 100%;
+		height: 120px;
+		justify-content: space-around;
+		align-items: center;
+
+		a {
+
+			/* margin: 30px ; */
+			
+
+			button {
+				padding: 0.6rem 1rem;
+				border: none;
+				border-radius: 30px;
+				background-color: $btn-pry-color;
+				border: 1px solid  hsla(57, 100%, 51%, 0.751);
+				color: #ffffff;
+				cursor: pointer;
+				transition: all 0.1s ease-in-out;
+
+				&:hover {
+					background-color: $btn-pry-color-hover;
+				}
+			}
+		}
+
+		input {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 10px;
+			color: rgba(255, 255, 255, 0.486);
+			border: 2px solid  hsla(57, 100%, 51%, 0.751);
+			margin-left: calc(44% - 200px);
+			border-radius: 30px;
+			height: 21px;
+			align-self: center;
+			width: 300px;
+			padding: 0.4rem 1rem;
+			outline: none;
+
+		}
+	}
+
+	&__videos {
+		table {
+			text-align: center;
+			font-family: "Cairo", sans-serif;
+			margin: auto;
+			width: 95%;
+			border-spacing: 2px;
+			
+			
+			th {
+				background-color: hsla(57, 100%, 51%, 0.146);
+				color: rgb(255, 255, 255);
+				padding: 10px;
+				border-radius: 5px 5px 0 0;
+			}
+			
+			tbody {
+				td {
+					padding: 10px;
+					background-color: rgba(70, 70, 70, 0.281);
+					border-radius: 0 0 5px 5px;
+
+					div {
+						display: flex;
+						flex-direction: column-reverse;
+						align-items: center;
+						justify-content: center;
+						gap: 20px;
+
+					}
+
+					button {
+						padding: 0.6rem 1rem;
+						width: 100px;
+						border: none;
+						border-radius: 20px;
+						color: rgb(255, 255, 255);
+						font-weight: bold;
+						cursor: pointer;
+					}
+
+					.delete {
+						background-color: $btn-scd-color;
+
+						&:hover {
+							background-color: $btn-scd-color-hover;
+						}
+					}
+
+					.edit {
+						background-color: $btn-pry-color;
+
+						&:hover {
+							background-color: $btn-pry-color-;
+							;
+						}
+					}
+
+					img {
+						overflow: hidden;
+						border-radius: 10px;
+						width: 100px;
+						height: 100px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+h2 {
+	text-align: center;
+	margin: 100px;
+}

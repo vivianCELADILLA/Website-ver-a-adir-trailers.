@@ -1,0 +1,102 @@
+.AdminForm {
+	color: hsl(57, 100%, 51%);;
+	min-height: 100vh;
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif;
+
+	background: url("../AdminForm/tv-series-bg.jpg") no-repeat;
+
+
+	// align-content: center;
+
+
+	.icon-create {
+		margin: auto;
+	}
+	
+	h1 {
+		font-size: 2.5rem;
+		font-weight: bold;
+		
+	}
+
+	form {
+		text-align: start;
+	
+
+		.reseña {
+			width: 90%;
+			height: 140px;
+			border-radius: 30px;
+		}
+
+		.row1,
+		.row2,
+		.row3 {
+			margin: 10px 0;
+		}
+
+		div {
+			display: flex;
+			gap: 10px;
+
+			label {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				width: 100%;
+
+				input {
+					width: 300px;
+					height: 40px;
+					border-radius: 10px;
+					padding: 0 10px;
+					outline: none;
+					background-color: #d7d7d7af;
+					border: none;
+
+					&:hover {
+						background-color: rgb(255, 255, 255);
+					}
+				}
+
+				textarea {
+					background-color: #d7d7d7a2;
+					width: 100%;
+					height: 100%;
+					outline: none;
+					resize: none;
+					border-radius: 10px;
+
+					&:hover {
+						background-color: rgb(255, 255, 255);
+					}
+				}
+			}
+		}
+
+		.buttonContainer {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			button {
+				font-size: 16px;
+				font-weight: bold;
+				padding: .8rem 1rem;
+				border: none;
+				border-radius: 15px;
+				background-color: #d7d7d78e;
+				cursor: pointer;
+				
+
+				&:hover {
+					background-color:  #fff200;;
+				}
+			}
+		}
+	}
+}
